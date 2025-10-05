@@ -36,3 +36,18 @@ DATA_VALIDATION_VALID_DIR : str = "validated"
 DATA_VALIDATION_INVALID_DIR : str = "Invalid"
 DATA_VALIDATION_DRIFT_REPORT_DIR : str = "Drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILE_NAME : str = "Drift_report.yaml"
+PREPROCESSING_OBJECT_FILE_NAME :str = "preprocessing.pkl"
+
+"""
+Data Transformation related Constant start with DATA_TRANSFORMATION var name
+"""
+DATA_TRANSFORMATION_DIR_NAME : str = "data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR : str = "transformed"
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR : str ="transformed_object"
+
+## knn imputer class to replace nan values
+DATA_TRANSFORMATION_IMPUTER_PARAMS : str ={
+        "missing_values" : np.nan,
+        "n_neighbors" : 3,
+        "weights" : "uniform"
+}
